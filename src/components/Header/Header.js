@@ -1,10 +1,14 @@
 import React from "react";
-import styles from './Header.module.css';
+import styles from "./Header.module.css";
+import logo from "../../assets/desktop/logo.svg";
 
 const Header = () => {
   return (
-    <div>
-      <h1>Header</h1>
+    <div className={styles.container}>
+      <div className={styles.flexContainer}>
+        <img src={logo} alt="devjobs logo" />
+        <p>Theme Switch</p>
+      </div>
     </div>
   );
 };
