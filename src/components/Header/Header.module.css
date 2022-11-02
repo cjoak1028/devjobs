@@ -1,0 +1,13 @@
+.container {
+    height: 13.6rem;
+    background-image: url('../../assets/mobile/bg-pattern-header.svg');
+    padding: 0 2.4rem;
+    padding-top: 3.2rem;
+    position: relative;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
