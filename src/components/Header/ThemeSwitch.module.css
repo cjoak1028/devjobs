@@ -1,3 +1,10 @@
+.switchContainer {
+    display: flex;
+    width: 11.2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .themeSwitch {
     width: 4.8rem;
     height: 2.4rem;
