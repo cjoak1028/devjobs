@@ -1,10 +1,9 @@
 .filterBarWrapper {
     height: 8rem;
-    position: absolute;
-    bottom: -4rem;
-    left: 0;
     width: 100%;
     padding: 0 2.4rem;
+    position: relative;
+    top: -4rem;
 }
 
 .filterBar {
