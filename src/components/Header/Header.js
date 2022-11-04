@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Header.module.css";
 import logo from "../../assets/desktop/logo.svg";
 import ThemeSwitch from "./ThemeSwitch";
+import FilterBar from "../FilterBar/FilterBar";
 
 const Header = () => {
   return (
@@ -10,6 +11,7 @@ const Header = () => {
         <img src={logo} alt="devjobs logo" />
         <ThemeSwitch />
       </div>
+      <FilterBar />
     </div>
   );
 };
