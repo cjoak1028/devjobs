@@ -9,7 +9,7 @@ const ThemeSwitch = () => {
       <img src={iconSun} alt="light theme icon" />
       <label className={styles.themeSwitch}>
         <input type="checkbox" />
-        <span class={styles.slider}></span>
+        <span className={styles.slider}></span>
       </label>
       <img src={iconMoon} alt="light theme icon" />
     </div>
