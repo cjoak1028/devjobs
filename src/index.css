@@ -27,3 +27,30 @@ html, body {
   padding: 0;
   box-sizing: inherit;
 }
+
+/* TYPOGRAPHY */
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}

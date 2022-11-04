@@ -1,0 +1,6 @@
+.list {
+    display: grid;
+    list-style-type: none;
+    padding: 0 2.4rem;
+    grid-row-gap: 4.9rem;
+}
