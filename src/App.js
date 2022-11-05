@@ -7,8 +7,10 @@ function App() {
   return (
     <div className={"App"}>
       <Header />
-      {/* <FilterBar /> */}
-      <JobsList />
+      <div style={{}}>
+        <FilterBar />
+        <JobsList />
+      </div>
     </div>
   );
 }

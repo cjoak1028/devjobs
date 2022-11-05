@@ -2,9 +2,7 @@
     height: 8rem;
     width: 100%;
     padding: 0 2.4rem;
-    position: absolute;
-    left: 0;
-    bottom: -4rem; /* half of filter bar height */
+    margin-bottom: 5.7rem;
 }
 
 .filterBar {
