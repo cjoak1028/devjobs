@@ -5,9 +5,3 @@
     padding-top: 3.2rem;
     position: relative;
 }
-
-.flexContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}

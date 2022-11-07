@@ -11,15 +11,44 @@
   --c-background: #F2F2F2;
 }
 
+/* UTILITIES */
+/* FLEX UTILITIES */
+.f {
+  display: flex;
+}
+
+.f-jc-c {
+  justify-content: center;
+}
+
+.f-jc-sb {
+  justify-content: space-between;
+}
+
+.f-ai-c {
+  align-items: center;
+}
+
+.f-d-c {
+  flex-direction: column;
+}
+
+/* TEXT LAYOUT */
+.ta-c {
+  text-align: center;
+}
+
 
 /* RESET */
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  height: 100%;
 }
 
-html, body {
-  height: 100%;
+body {
+  min-height: 100%;
+  background-color: var(--c-background);
 }
 
 *, *::before, *::after {

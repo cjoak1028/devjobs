@@ -1,10 +1,10 @@
-.card {
+.jobCard {
     background-color: var(--c-white);
     border-radius: .6rem;
     padding: 0 3.2rem;
 }
 
-.cardContent {
+.jobCardContent {
     position: relative;
     top: -2.5rem;
 }
@@ -16,6 +16,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.jobCard .logoContainer {
     margin-bottom: 2.4rem;
 }
 

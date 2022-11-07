@@ -14,8 +14,8 @@ const JobCard = ({ jobData }) => {
     location,
   } = jobData;
   return (
-    <div className={styles.card}>
-      <div className={styles.cardContent}>
+    <div className={styles.jobCard}>
+      <div className={styles.jobCardContent}>
         <div
           className={styles.logoContainer}
           style={{ backgroundColor: logoBackground }}

@@ -6,7 +6,7 @@ import iconSearchWhite from "../../assets/desktop/icon-search-white.svg";
 const FilterBar = () => {
   return (
     <div className={styles.filterBarWrapper}>
-      <div className={styles.filterBar}>
+      <div className={`${styles.filterBar} f f-ai-c`}>
         <input
           className={styles.filterInput}
           type="text"

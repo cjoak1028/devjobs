@@ -5,7 +5,7 @@ import iconMoon from "../../assets/desktop/icon-moon.svg";
 
 const ThemeSwitch = () => {
   return (
-    <div className={styles.switchContainer}>
+    <div className={`${styles.switchContainer} f f-jc-sb f-ai-c`}>
       <img src={iconSun} alt="light theme icon" />
       <label className={styles.themeSwitch}>
         <input type="checkbox" />

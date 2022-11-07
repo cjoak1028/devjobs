@@ -6,7 +6,7 @@ import ThemeSwitch from "./ThemeSwitch";
 const Header = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.flexContainer}>
+      <div className={"f f-ai-c f-jc-sb"}>
         <img src={logo} alt="devjobs logo" />
         <ThemeSwitch />
       </div>
