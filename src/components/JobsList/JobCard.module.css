@@ -36,3 +36,13 @@
     font-weight: 700;
     font-size: 1.4rem;
 }
+
+.jobLink {
+    text-decoration: none;
+    color: var(--c-blue-veryDark);
+}
+
+.jobLink:hover {
+    color: var(--c-gray-dark);
+    transition: .2s;
+}

@@ -27,7 +27,7 @@ const JobCard = ({ jobData }) => {
           <span className={styles.circle}></span>
           {contract}
         </p>
-        <Link to={`/${id}`} state={jobData}>
+        <Link to={`/${id}`} state={jobData} className={styles.jobLink}>
           <h3 style={{ marginBottom: "1.7rem" }}>{position}</h3>
         </Link>
         <p style={{ marginBottom: "4.4rem" }}>{company}</p>

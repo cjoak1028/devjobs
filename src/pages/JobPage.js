@@ -8,19 +8,21 @@ const JobPage = () => {
 
   return (
     <div className={styles.jobPage}>
-      <div className={`${styles.companyOverviewContainer}`}>
-        <div className={styles.companyOverview}>
+      <div className={`${styles.companyOverview}`}>
+        <div className={styles.companyOverviewContent}>
           <div
             className={styles.logoContainer}
             style={{ backgroundColor: jobData.logoBackground }}
           >
             <img src={jobData.logo} alt={`${jobData.company} logo`} />
           </div>
-          <div className={styles.websiteContainer}>
+          <div className={styles.textAlignCenter}>
             <h3>{jobData.company}</h3>
             <p href={jobData.website}>{jobData.company.toLowerCase()}.com</p>
           </div>
-          <a className={styles.siteButton} href={jobData.website}>Company Site</a>
+          <a className={styles.websiteLink} href={jobData.website}>
+            Company Site
+          </a>
         </div>
       </div>
     </div>
