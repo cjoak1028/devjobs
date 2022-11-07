@@ -17,26 +17,11 @@ const JobsList = () => {
         {jobsData
           .slice(0, limit)
           .map(
-            ({
-              id,
-              company,
-              logo,
-              logoBackground,
-              position,
-              postedAt,
-              contract,
-              location,
-            }) => {
+            (jobData) => {
               return (
-                <li key={id}>
+                <li key={jobData.id}>
                   <JobCard
-                    company={company}
-                    logo={logo}
-                    logoBackground={logoBackground}
-                    position={position}
-                    postedAt={postedAt}
-                    contract={contract}
-                    location={location}
+                    jobData={jobData}
                   />
                 </li>
               );

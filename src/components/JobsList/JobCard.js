@@ -1,15 +1,18 @@
 import React from "react";
 import styles from "./JobCard.module.css";
+import { Link } from "react-router-dom";
 
-const JobCard = ({
-  company,
-  logo,
-  logoBackground,
-  position,
-  postedAt,
-  contract,
-  location,
-}) => {
+const JobCard = ({ jobData }) => {
+  const {
+    id,
+    company,
+    logo,
+    logoBackground,
+    position,
+    postedAt,
+    contract,
+    location,
+  } = jobData;
   return (
     <div className={styles.card}>
       <div className={styles.cardContent}>
@@ -24,7 +27,9 @@ const JobCard = ({
           <span className={styles.circle}></span>
           {contract}
         </p>
-        <h3 style={{ marginBottom: "1.7rem" }}>{position}</h3>
+        <Link to={`/${id}`} state={jobData}>
+          <h3 style={{ marginBottom: "1.7rem" }}>{position}</h3>
+        </Link>
         <p style={{ marginBottom: "4.4rem" }}>{company}</p>
         <p className={styles.location}>{location}</p>
       </div>
