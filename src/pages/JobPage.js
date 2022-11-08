@@ -1,30 +1,31 @@
 import React from "react";
 import styles from "./JobPage.module.css";
 import { useLocation } from "react-router-dom";
+import CompanyOverview from "../components/CompanyOverview/CompanyOverview";
+import PositionOverview from "../components/PositionOverview/PositionOverview";
 
 const JobPage = () => {
-  const location = useLocation();
-  const jobData = location.state;
+  const currLocation = useLocation();
+  const jobData = currLocation.state;
 
   return (
     <div className={styles.jobPage}>
-      <div className={`${styles.companyOverview}`}>
-        <div className={styles.companyOverviewContent}>
-          <div
-            className={styles.logoContainer}
-            style={{ backgroundColor: jobData.logoBackground }}
-          >
-            <img src={jobData.logo} alt={`${jobData.company} logo`} />
-          </div>
-          <div className={styles.textAlignCenter}>
-            <h3>{jobData.company}</h3>
-            <p href={jobData.website}>{jobData.company.toLowerCase()}.com</p>
-          </div>
-          <a className={styles.websiteLink} href={jobData.website}>
-            Company Site
-          </a>
-        </div>
-      </div>
+      <CompanyOverview
+        logoBackground={jobData.logoBackground}
+        logo={jobData.logo}
+        company={jobData.company}
+        website={jobData.website}
+      />
+      <PositionOverview
+        postedAt={jobData.postedAt}
+        contract={jobData.contract}
+        position={jobData.position}
+        location={jobData.location}
+        apply={jobData.apply}
+        description={jobData.description}
+        requirements={jobData.requirements}
+        role={jobData.role}
+      />
     </div>
   );
 };
